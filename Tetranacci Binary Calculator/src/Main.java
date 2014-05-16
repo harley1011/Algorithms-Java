@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 		PrintWriter writer = new PrintWriter("out.txt", "utf-8");
-		for ( int i=5; i<= 100; i= i+5)
+		for ( int i=5; i<= 5; i= i+5)
 		{
 			long timeStart = System.nanoTime();
 			long tetraNumber = binaryTetra(i);
@@ -21,6 +21,7 @@ public class Main {
 	}
 	public static long binaryTetra(long k)
 	{
+		System.out.println(k);
 		if (k <= 2) // check to see if we are 0,1,2 number 
 			return 0;
 		else if (k == 3) //' check to see if we are 3 number
